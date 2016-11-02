@@ -351,7 +351,7 @@ struct pci_device {
     /**
      * Device revision number, as read from the configuration header.
      */
-    uint8_t     revision;
+//    uint8_t     revision;
 
 
     /**

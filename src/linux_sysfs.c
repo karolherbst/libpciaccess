@@ -178,7 +178,7 @@ populate_entries( struct pci_system * p )
 		    device->base.device_class = (uint32_t)config[9]
 			+ ((uint32_t)config[10] << 8)
 			+ ((uint32_t)config[11] << 16);
-		    device->base.revision = config[8];
+	//	    device->base.revision = config[8];
 		    device->base.subvendor_id = (uint16_t)config[44]
 			+ ((uint16_t)config[45] << 8);
 		    device->base.subdevice_id = (uint16_t)config[46]

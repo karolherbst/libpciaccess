@@ -136,7 +136,7 @@ print_pci_device( struct pci_device * dev, int verbose )
 		(dev->device_class >> 16) & 0x0ff,
 		(dev->device_class >>  8) & 0x0ff,
 		(dev->device_class >>  0) & 0x0ff,
-		dev->revision );
+		/*dev->revision*/0 );
 
 	pci_device_cfg_read_u8( dev, & cache_line_size, 12 );
 	pci_device_cfg_read_u8( dev, & latency_timer, 13 );
